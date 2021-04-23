@@ -2,7 +2,6 @@
 
 .products {
   font-size: 14px;
-  color: #858585;
   text-align: center;
   margin-top: 50px;
   padding: 20px;
@@ -22,9 +21,9 @@
   margin: 10px;
   padding: 10px;
   align-items: center;
-  border: 1px solid #0095e0;
+  border: 1px solid var(--dark-blue);
   background-color: #fff;
-  color: #858585;
+  color: #464646;
   cursor: pointer;
   outline: none;
 }
@@ -39,6 +38,6 @@
 
 @media (max-width: 424px) {
   .box-products {
-      flex-direction: column;
+    flex-direction: column;
   }
 }

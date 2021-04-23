@@ -1,7 +1,7 @@
 import React from 'react';
 import Products from '../components/Products';
-import '../styles/global.css';
 import '../styles/about.css';
+import '../styles/products.css';
 import WhereAre from '../assets/where-are.png';
 import WhatDo from '../assets/what-do.png';
 

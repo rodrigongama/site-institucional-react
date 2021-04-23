@@ -4,7 +4,7 @@ import '../styles/style.css';
 import { useState } from 'react';
 import Products from '../components/Products';
 import NewsImage from '../assets/chat.png';
-import ShipPhoto from '../assets/ship-190.png';
+import ShipPhoto from '../assets/lancha-190.jpg';
 import Partner1 from '../assets/partner1.png';
 import Partner2 from '../assets/partner2.png';
 import Partner3 from '../assets/partner3.png';
@@ -27,26 +27,25 @@ function App() {
               ref={(elem) => (reactSwipeElem = elem)}
             >
             <div>
-              <h1>Radar Samyung</h1>
+              <h1>Boat Company</h1>
               <p>
-                Apresentamos o novo radar SMR-7200, um radar mais potente e com a
+                Apresentamos o novo GPS-9000, um GPS mais potente e com a
                 antena aberta "open array".
               </p>
               
             </div>
             <div>
-              <h1>Radar Samyung</h1>
+              <h1>GPS Marine</h1>
               <p>
-                Apresentamos o novo radar SMR-7200, um radar mais potente e com a
+                Apresentamos o novo GPS-9000, um GPS mais potente e com a
                 antena aberta "open array".
               </p>
               
             </div>
             <div>
-              <h1>Radar Samyung</h1>
+              <h1>BOAT GT-5001</h1>
               <p>
-                Apresentamos o novo radar SMR-7200, um radar mais potente e com a
-                antena aberta "open array".
+                Apresentamos o novo GT-5001, um barco mais potente e com o motor lorem ipsum.
               </p>
               
             </div>
@@ -79,27 +78,24 @@ function App() {
                   className="ship-photo"
                 />
 
-                <h2>Waypoint Navalshore 2014</h2>
+                <h2>Boat Company 2021</h2>
                 <p>
-                  Pelo 4º ano consecutivo a Waypoint marca presença na Marintec
-                  South Navalshore. Foram 3 dias de grandes encontros com
-                  clientes...
+                  Pelo 6º ano consecutivo a Boat Company marca presença na Expo Boat. 
+                  Foram 3 dias de grandes encontros com clientes...
                 </p>
                 <hr />
 
-                <h2>Radar Samyung</h2>
+                <h2>GPS Marine</h2>
                 <p>
-                  NEWS: NOVO RADAR SAMYUNG <br /> Apresentamos o novo radar
-                  SMR-7200, um radar mais potente e com a antena aberta "open
-                  array"...
+                  NEWS: NOVO GPS MARINE <br /> Apresentamos o novo
+                  GPS-9000, um GPS mais potente e com o wireless "lorem ipsum"...
                 </p>
                 <hr />
 
-                <h2>Radar Samyung</h2>
+                <h2>GPS MARINE</h2>
                 <p>
-                  NEWS: NOVO RADAR SAMYUNG <br /> Apresentamos o novo radar
-                  SMR-7200, um radar mais potente e com a antena aberta "open
-                  array"...
+                  NEWS: NOVO GPS MARINE <br /> Apresentamos o novo
+                  GPS-9000, um GPS mais potente e com o wireless "lorem ipsum"...
                 </p>
 
                 <button className="button-more">Todas as novidades</button>
@@ -141,133 +137,133 @@ function App() {
           <div className="boxes-projects">
             <div className="box-project">
               <div className="box-title">
-                <h3>Fast Supply Vessel UT-4000</h3>
+                <h3>Lorem Ipsum Vessel GT-6000</h3>
               </div>
 
               <div className="content-box">
                 <div className="flex">
-                  <h4 className="number">2015</h4>
+                  <h4 className="number">2021</h4>
                   <span>Marinha do Brasil</span>
                 </div>
 
                 <div className="content-p">
                   <h5>Equipamentos</h5>
-                  <p>Sailor | Cobham |Samyung enc</p>
+                  <p>Salum | Kobcha | GPS-9000 enc</p>
                 </div>
 
                 <div>
                   <h5>Estaleiro</h5>
-                  <p>Santa Cruz</p>
+                  <p>Barra da Tijuca</p>
                 </div>
               </div>
             </div>
 
             <div className="box-project">
               <div className="box-title">
-                <h3>Fast Supply Vessel UT-4000</h3>
+                <h3>Lorem Ipsum Vessel GT-6000</h3>
               </div>
               <div className="content-box">
                 <div className="flex">
-                  <h4 className="number">2014</h4>
-                  <span>Marimar S.A.</span>
+                  <h4 className="number">2020</h4>
+                  <span>Marinheiro S.A.</span>
                 </div>
 
                 <div className="content-p">
                   <h5>Equipamentos</h5>
-                  <p>Sailor | Cobham |Samyung enc</p>
+                  <p>Salum | Kobcha | GPS-9000 enc</p>
                 </div>
 
                 <div>
                   <h5>Estaleiro</h5>
-                  <p>Santa Cruz</p>
+                  <p>Barra da Tijuca</p>
                 </div>
               </div>
             </div>
 
             <div className="box-project">
               <div className="box-title">
-                <h3>Fast Supply Vessel UT-4000</h3>
+                <h3>Lorem Ipsum Vessel GT-6000</h3>
               </div>
               <div className="content-box">
                 <div className="flex">
-                  <h4 className="number">2013</h4>
+                  <h4 className="number">2019</h4>
                   <span>Marinha do Brasil</span>
                 </div>
 
                 <div className="content-p">
                   <h5>Equipamentos</h5>
-                  <p>Sailor | Cobham |Samyung enc</p>
+                  <p>Salum | Kobcha | GPS-9000 enc</p>
                 </div>
 
                 <div>
                   <h5>Estaleiro</h5>
-                  <p>Santa Cruz</p>
+                  <p>Barra da Tijuca</p>
                 </div>
               </div>
             </div>
 
             <div className="box-project">
               <div className="box-title">
-                <h3>Fast Supply Vessel UT-4000</h3>
+                <h3>Lorem Ipsum Vessel GT-6000</h3>
               </div>
               <div className="content-box">
                 <div className="flex">
-                  <h4 className="number">2013</h4>
+                  <h4 className="number">2019</h4>
                   <span>Marinha do Brasil</span>
                 </div>
 
                 <div className="content-p">
                   <h5>Equipamentos</h5>
-                  <p>Sailor | Cobham |Samyung enc</p>
+                  <p>Salum | Kobcha | GPS-9000 enc</p>
                 </div>
 
                 <div>
                   <h5>Estaleiro</h5>
-                  <p>Santa Cruz</p>
+                  <p>Barra da Tijuca</p>
                 </div>
               </div>
             </div>
 
             <div className="box-project">
               <div className="box-title">
-                <h3>Fast Supply Vessel UT-4000</h3>
+                <h3>Lorem Ipsum Vessel GT-6000</h3>
               </div>
               <div className="content-box">
                 <div className="flex">
-                  <h4 className="number">2013</h4>
-                  <span>Marimar S.A.</span>
+                  <h4 className="number">2019</h4>
+                  <span>Marinheiro S.A.</span>
                 </div>
 
                 <div className="content-p">
                   <h5>Equipamentos</h5>
-                  <p>Sailor | Cobham |Samyung enc</p>
+                  <p>Salum | Kobcha | GPS-9000 enc</p>
                 </div>
 
                 <div>
                   <h5>Estaleiro</h5>
-                  <p>Santa Cruz</p>
+                  <p>Barra da Tijuca</p>
                 </div>
               </div>
             </div>
 
             <div className="box-project">
               <div className="box-title">
-                <h3>Fast Supply Vessel UT-4000</h3>
+                <h3>Lorem Ipsum Vessel GT-6000</h3>
               </div>
               <div className="content-box">
                 <div className="flex">
-                  <h4 className="number">2012</h4>
+                  <h4 className="number">2018</h4>
                   <span>Marinha do Brasil</span>
                 </div>
 
                 <div className="content-p">
                   <h5>Equipamentos</h5>
-                  <p>Sailor | Cobham |Samyung enc</p>
+                  <p>Salum | Kobcha | GPS-9000 enc</p>
                 </div>
 
                 <div>
                   <h5>Estaleiro</h5>
-                  <p>Santa Cruz</p>
+                  <p>Barra da Tijuca</p>
                 </div>
               </div>
             </div>

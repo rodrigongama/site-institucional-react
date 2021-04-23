@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import LogoWaypoint from '../assets/logo-waypoint.png';
+import LogoLancha from '../assets/logotipo-lancha-200.jpg';
 
 import '../styles/global.css';
 
@@ -11,7 +11,7 @@ export default function Header() {
       {isOpen && (
         <div className="side-menu">
           <div className="format">
-            <h3>Waypoint</h3>
+            <h3>Boat Company</h3>
             <a href="/about">Quem somos</a>
             <a href="/"><p>Onde estamos</p></a>
             <a href="/"><p>O que fazemos</p></a>
@@ -54,7 +54,7 @@ export default function Header() {
       </button>
       
       <a href="/">
-        <img src={LogoWaypoint} alt="Logo da Waypoint" />
+        <img src={LogoLancha} alt="Logo da Boat Company" />
       </a>
       
 

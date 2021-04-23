@@ -1,15 +1,16 @@
 /* Photo-float ##############*/
 .photo-ship3 {
-  background: url(../assets/ship-contact.png) center;
+  background: url(../assets/ship-contact.jpg);
+  background-repeat: no-repeat;
   width: 100%;
-  height: 230px;
+  height: 250px;
   position: relative;
 }
 
 .float-contact {
   width: 200px;
   height: 150px;
-  background-color: #0095e098;
+  background-color: rgba(49, 110, 150, 0.75);
   text-align: center;
   padding-top: 55px;
   position: absolute;
@@ -33,7 +34,7 @@
 }
 
 /* Form ##############*/
-form, 
+form,
 .info-adress {
   width: 350px;
   height: 600px;
@@ -49,14 +50,14 @@ form div label {
   margin: 2px 0px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #858585;
+  color: #464646;
 }
 
 form div input,
 form div select {
   padding: 6px;
   margin-bottom: 10px;
-  border: 1px solid #858585;
+  border: 1px solid #464646;
 }
 
 form div .tel {
@@ -85,12 +86,11 @@ form button {
   margin-top: 20px;
 
   background: none;
-  border: 1.5px solid #0095E0;
-  color: #0095E0;
+  border: 1.5px solid var(--dark-blue);
+  color: var(--dark-blue);
   font-weight: 800;
   cursor: pointer;
 }
-
 
 /* Map ##############*/
 .info-adress {
@@ -109,35 +109,19 @@ form button {
 .info-adress p {
   padding: 2px 0px 20px 0px;
   font-size: 15px;
-  color: #858585;
+  color: #464646;
 }
 
 .map-contact {
-  border: none;
   width: 330px;
-  height: 200px; 
+  height: 200px;
 }
 
 /* Responsive ##############*/
 @media (max-width: 715px) {
-  main {
-      flex-direction: column;
-      align-items: center;
+  .main-form {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media (max-width: 549px) {
-  nav a {
-      margin: 1px;
-  }
-
-  nav a::after {
-      margin-left: 3px;
-  }
-}
-
-@media (max-width: 424px) {
-  #select {
-      display: none;
-  }
-}

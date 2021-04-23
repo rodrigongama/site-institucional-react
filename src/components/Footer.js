@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       <nav className="nav-footer">
-        <Link to="/">Waypoint</Link>
+        <Link to="/">Boat S.A.</Link>
         <Link to="/">Projetos</Link>
         <Link to="/">Produtos</Link>
         <Link to="/">Novidades</Link>
@@ -13,8 +13,8 @@ export default function Footer() {
       </nav>
 
       <p>
-        Av. Venezuela 3, 18º andar - Centro - Rio de Janeiro/RJ - Telefone: +55
-        21 2203-900
+        Estrada de lorem, 1003 - Ipsum - Rio de Janeiro/RJ - Telefone: +55
+        21 2222-2222
       </p>
     </footer>
   );

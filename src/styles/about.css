@@ -1,9 +1,9 @@
 /* Photo #################*/
 .section-photo-about {
-  background-image: url(../assets/ship-pag02.png);
+  background-image: url(../assets/ship-pag2.jpg);
   background-repeat: no-repeat;
   width: 100%;
-  height: 250px;
+  height: 310px;
 
   background-size: cover;
   background-position: center center;
@@ -12,19 +12,19 @@
 }
 
 .section-float-blue {
-  background-color: #4cb5e9e0;
+  background-color: rgba(38, 87, 120, 0.563);
   width: 220px;
   height: 170px;
 
   position: absolute;
-  top: 35%;
-  left: 18.5%;
+  top: 50%;
+  left: 18%;
   padding-top: 43px;
-  padding-left: 53px; 
+  padding-left: 53px;
 }
 
 .section-float-blue h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 30px;
   color: #fff;
   text-align: left;
@@ -43,7 +43,7 @@ article {
   margin-bottom: 50px;
 }
 article p {
-  color: #858585;
+  color: #464646;
   text-align: left;
   padding: 10px 0px;
 }
@@ -52,9 +52,9 @@ article p {
 .columns-texts {
   width: 100%;
   height: 400px;
-  
-  background-color: #EEEEEE;
-  color: #858585;
+
+  background-color: #eeeeee;
+  color: #464646;
 }
 
 .max-columns {
@@ -90,90 +90,53 @@ article p {
   padding: 40px 0px;
 }
 
-/* Products #################*/
-.products {
-  font-size: 14px;
-  color: #858585;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 90px;
-}
-
-.box-products {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 25px;
-}
-
-.box-products div {
-  width: 109px;
-  height: 119px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #0095E0;
-  align-items: center;
-}
-
-.box-products div .product-nav {
-  padding-top: 3px;
-}
-
-.box-products div .product-seg {
-  padding-top: 9px;
-}
-
 
 /* Responsive #################*/
 @media (max-width: 819px) {
   article p {
-      padding: 10px;
+    padding: 10px;
   }
 
   .columns-texts {
-      height: 650px;
+    height: 650px;
   }
 
-  .text1, .text2 {
-      margin: 20px auto;
+  .text1,
+  .text2 {
+    margin: 20px auto;
   }
 
   .max-columns,
   .where-what {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .where-what a {
-      margin: 0 auto;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 549px) {
   nav a {
-      margin: 1px;
+    margin: 1px;
   }
 
   nav a::after {
-      margin-left: 3px;
+    margin-left: 3px;
   }
 }
 
 @media (max-width: 400px) {
   #select {
-      display: none;
+    display: none;
   }
-  
+
   .max-columns {
-      padding: 10px;
+    padding: 10px;
   }
 
   .where-what img {
-      width: 90%;
-      padding-left: 30px;
-  }
-
-  .box-products {
-      flex-direction: column;
+    width: 90%;
+    padding-left: 30px;
   }
 }
