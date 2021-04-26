@@ -295,6 +295,7 @@
 .arrow-prev2,
 .arrow-next2 {
   background-repeat: no-repeat;
+  background-color: transparent;
   width: 20px;
   height: 70px;
   padding: 20px;
@@ -316,12 +317,6 @@
 @media (max-width: 999px) {
   .boxes-projects {
     grid-template-columns: auto auto;
-  }
-}
-
-@media (max-width: 820px) {
-  body {
-    font-size: 95%;
   }
 }
 
