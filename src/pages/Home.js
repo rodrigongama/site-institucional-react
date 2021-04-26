@@ -64,63 +64,63 @@ function App() {
         <p>Novidades</p>
       </button>
 
-      <section className={`layer ${isNewsOpen && 'layer-active'}`}>
         {isNewsOpen && (
-          <div className="news-open">
-            <button className="close-news" onClick={() => setIsNewsOpen(false)}>
-              
-            </button>
-            <div className="info">
-              <div className="texts-news">
-                <img
-                  src={ShipPhoto}
-                  alt="Foto de um barco"
-                  className="ship-photo"
-                />
-
-                <h2>Boat Company 2021</h2>
-                <p>
-                  Pelo 6º ano consecutivo a Boat Company marca presença na Expo Boat. 
-                  Foram 3 dias de grandes encontros com clientes...
-                </p>
-                <hr />
-
-                <h2>GPS Marine</h2>
-                <p>
-                  NEWS: NOVO GPS MARINE <br /> Apresentamos o novo
-                  GPS-9000, um GPS mais potente e com o wireless "lorem ipsum"...
-                </p>
-                <hr />
-
-                <h2>GPS MARINE</h2>
-                <p>
-                  NEWS: NOVO GPS MARINE <br /> Apresentamos o novo
-                  GPS-9000, um GPS mais potente e com o wireless "lorem ipsum"...
-                </p>
-
-                <button className="button-more">Todas as novidades</button>
-              </div>
-
-              <div className="section-submit">
-                <div className="sec-submit">
-                  <h4>Receba todas as novidades por e-mail</h4>
-                  <label for="E-mail"></label>
-                  <input
-                    type="email"
-                    name="E-mail"
-                    id="email-float"
-                    placeholder="seu@email.com"
+          <section className="layer-active">
+            <div className="news-open">
+              <button className="close-news" onClick={() => setIsNewsOpen(false)}>
+                
+              </button>
+              <div className="info">
+                <div className="texts-news">
+                  <img
+                    src={ShipPhoto}
+                    alt="Foto de um barco"
+                    className="ship-photo"
                   />
-                  <button type="submit" className="submit-email">
-                    Enviar
-                  </button>
+
+                  <h2>Boat Company 2021</h2>
+                  <p>
+                    Pelo 6º ano consecutivo a Boat Company marca presença na Expo Boat. 
+                    Foram 3 dias de grandes encontros com clientes...
+                  </p>
+                  <hr />
+
+                  <h2>GPS Marine</h2>
+                  <p>
+                    NEWS: NOVO GPS MARINE <br /> Apresentamos o novo
+                    GPS-9000, um GPS mais potente e com o wireless "lorem ipsum"...
+                  </p>
+                  <hr />
+
+                  <h2>GPS MARINE</h2>
+                  <p>
+                    NEWS: NOVO GPS MARINE <br /> Apresentamos o novo
+                    GPS-9000, um GPS mais potente e com o wireless "lorem ipsum"...
+                  </p>
+
+                  <button className="button-more">Todas as novidades</button>
+                </div>
+
+                <div className="section-submit">
+                  <div className="sec-submit">
+                    <h4>Receba todas as novidades por e-mail</h4>
+                    <label for="E-mail"></label>
+                    <input
+                      type="email"
+                      name="E-mail"
+                      id="email-float"
+                      placeholder="seu@email.com"
+                    />
+                    <button type="submit" className="submit-email">
+                      Enviar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         )}
-      </section>
-
+      
       <Products />
 
       <main className="main-home">
@@ -292,7 +292,6 @@ function App() {
               <img
                 src={Partner1}
                 alt="Logo do primeiro parceiro"
-                className="none1"
               />
             </div>
             <div className="carousel-item">
@@ -302,14 +301,12 @@ function App() {
               <img
                 src={Partner3}
                 alt="Logo do terceiro parceiro"
-                className="none2"
               />
             </div>
             <div className="carousel-item">
               <img
                 src={Partner4}
                 alt="Logo do quarto parceiro"
-                className="none1"
               />
             </div>
           </ReactSwipe>
