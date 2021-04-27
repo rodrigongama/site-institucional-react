@@ -1,7 +1,3 @@
-import '../styles/global.css';
-import '../styles/style.css';
-
-import { useState } from 'react';
 import Products from '../components/Products';
 import NewsImage from '../assets/chat.png';
 import ShipPhoto from '../assets/lancha-190.jpg';
@@ -9,13 +5,19 @@ import Partner1 from '../assets/partner1.png';
 import Partner2 from '../assets/partner2.png';
 import Partner3 from '../assets/partner3.png';
 import Partner4 from '../assets/partner4.png';
+import { useState } from 'react';
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import '../styles/global.css';
+import '../styles/style.css';
+
 import ReactSwipe from 'react-swipe';
+import { Carousel } from 'react-responsive-carousel';
 
 
 function App() {
   const [isNewsOpen, setIsNewsOpen] = useState(false);
   let reactSwipeEl;
-  let reactSwipeElem;
 
   return (
     <>
@@ -24,7 +26,7 @@ function App() {
           <ReactSwipe
               className="carousel"
               swipeOptions={{ continuous: true, auto: 2000, speed: 1000}}
-              ref={(elem) => (reactSwipeElem = elem)}
+              ref={(el) => (reactSwipeEl = el)}
             >
             <div>
               <h1>Boat Company</h1>
@@ -52,9 +54,9 @@ function App() {
             
           </ReactSwipe>
               <div className="white-arrows">
-                <button className="arrow-prev" aria-label="Slide anterior" onClick={() => reactSwipeElem.prev()}></button>
+                <button className="arrow-prev" aria-label="Slide anterior" onClick={() => reactSwipeEl.prev()}></button>
                 
-                <button className="arrow-next" aria-label="Próximo slide" onClick={() => reactSwipeElem.next()}></button>
+                <button className="arrow-next" aria-label="Próximo slide" onClick={() => reactSwipeEl.next()}></button>
               </div>
         </div>
       </section>
@@ -277,16 +279,16 @@ function App() {
         <h2>Marcas Parceiras</h2>
 
         <div className="partners">
-          <button
-            className="arrow-prev2"
-            aria-label="Voltar"
-            onClick={() => reactSwipeEl.prev()}
-          ></button>
-
-          <ReactSwipe
+          
+          <Carousel
             className="carousel"
-            swipeOptions={{ continuous: true, auto: 2000, speed: 1000}}
-            ref={(el) => (reactSwipeEl = el)}
+            showArrows={true} 
+            autoPlay={true}
+            centerMode={true}
+            infiniteLoop={true}
+            showStatus={false}
+            showIndicators={false}
+            showThumbs={false}
           >
             <div className="carousel-item">
               <img
@@ -309,13 +311,8 @@ function App() {
                 alt="Logo do quarto parceiro"
               />
             </div>
-          </ReactSwipe>
+          </Carousel>
 
-          <button
-            className="arrow-next2"
-            aria-label="Avançar"
-            onClick={() => reactSwipeEl.next()}
-          ></button>
         </div>
       </section>
     </>

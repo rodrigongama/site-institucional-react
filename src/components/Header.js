@@ -64,7 +64,6 @@ export default function Header() {
             Português
           </option>
           <option value="inglês">Inglês</option>
-          <option value="italiano">Italiano</option>
         </select>
       </div>
     </div>

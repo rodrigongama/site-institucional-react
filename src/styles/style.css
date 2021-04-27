@@ -281,35 +281,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50%;
+  max-width: 30%;
   min-width: 300px;
   margin: 40px auto;
 }
 
 .partners .carousel-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 150px;
+  margin: 0 auto;
 }
 
-.arrow-prev2,
-.arrow-next2 {
-  background-repeat: no-repeat;
-  background-color: transparent;
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
   width: 20px;
   height: 70px;
   padding: 20px;
   border: none;
   outline: none;
   cursor: pointer;
+  margin-top: 35px;
+  opacity: 1;
 }
 
-.arrow-prev2 {
-  background-image: url(../assets/blue-arrow-prev.png);
+.carousel .control-next.control-arrow:before,
+.carousel .control-prev.control-arrow:before {
+  border: 0px;
 }
 
-.arrow-next2 {
-  background-image: url(../assets/blue-arrow-next.png);
+.carousel.carousel-slider .control-arrow.control-prev {
+  background: transparent url(../assets/blue-arrow-prev.png) no-repeat;
+}
+
+.carousel.carousel-slider .control-arrow.control-next {
+  background: transparent url(../assets/blue-arrow-next.png) no-repeat;
 }
 
 /* Responsive #################*/
