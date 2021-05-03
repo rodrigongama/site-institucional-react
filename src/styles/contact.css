@@ -25,7 +25,7 @@
 }
 
 /* Main ##############*/
-.main-form {
+.main-form-contact {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -34,53 +34,53 @@
 }
 
 /* Form ##############*/
-form,
+.form-contact,
 .info-adress {
   width: 350px;
   height: 600px;
   padding-left: 6px;
 }
 
-form div {
+.form-contact div {
   display: flex;
   flex-direction: column;
 }
 
-form div label {
+.form-contact div label {
   margin: 2px 0px;
   text-transform: uppercase;
   font-weight: 600;
   color: #464646;
 }
 
-form div input,
-form div select {
+.form-contact div input,
+.form-contact div select {
   padding: 6px;
   margin-bottom: 10px;
   border: 1px solid #464646;
 }
 
-form div .tel {
+.form-contact div .tel {
   flex-direction: row;
 }
 
-form div #tel1 {
+.form-contact div #tel1 {
   width: 50px;
 }
 
-form div .tel span {
+.form-contact div .tel span {
   margin: 0px 10px;
 }
 
-form div #tel2 {
+.form-contact div #tel2 {
   width: 130px;
 }
 
-form textarea {
+.form-contact textarea {
   resize: none;
 }
 
-form button {
+.form-contact button {
   width: 205px;
   padding: 7px;
   margin-top: 20px;
@@ -92,34 +92,41 @@ form button {
   cursor: pointer;
 }
 
+.form-contact button:hover {
+  background-color: var(--dark-blue);
+  color: #fff;
+  transition: 0.6s;
+}
+
 /* Map ##############*/
-.info-adress {
+.main-form-contact .info-adress {
   padding-top: 20px;
 }
 
-.info-adress div {
+.main-form-contact .info-adress div {
   padding: 20px 30px 0px 0px;
 }
 
-.info-adress h2 {
+.main-form-contact .info-adress h2 {
   text-align: left;
   font-size: 18px;
 }
 
-.info-adress p {
+.main-form-contact .info-adress p {
   padding: 2px 0px 20px 0px;
   font-size: 15px;
   color: #464646;
 }
 
-.map-contact {
+.main-form-contact .info-adress #map-contact {
   width: 330px;
   height: 200px;
+  border: 1px solid #ccc;
 }
 
 /* Responsive ##############*/
 @media (max-width: 715px) {
-  .main-form {
+  .main-form-contact {
     flex-direction: column;
     align-items: center;
   }

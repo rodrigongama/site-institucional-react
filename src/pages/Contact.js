@@ -11,8 +11,8 @@ export default function Contact() {
           </div>
       </section>
 
-      <main className="main-form">
-          <form action="" method="post">
+      <main className="main-form-contact">
+          <form className="form-contact" action="" method="post">
               <div>
                   <label for="name">Nome:</label>
                   <input type="text" name="name" id="name" />

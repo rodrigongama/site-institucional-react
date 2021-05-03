@@ -262,6 +262,12 @@
   margin-bottom: 80px;
 }
 
+.button-projects:hover {
+  background-color: var(--dark-blue);
+  color: #fff;
+  transition: 0.6s;
+}
+
 .projects a {
   text-decoration: none;
   cursor: pointer;

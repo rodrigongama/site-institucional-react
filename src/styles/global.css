@@ -60,9 +60,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 360px;
+  width: 300px;
   height: 100vh;
-  background-color: var(--blue);
+  background-color: var(--dark-blue);
 
   z-index: 10;
   transition: 200ms ease-in-out;
@@ -75,7 +75,7 @@
 .format {
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
+  margin-left: 50px;
 
   color: #fff;
 }
@@ -88,6 +88,7 @@
 
 .side-menu .format a {
   font-size: 13px;
+  padding: 2px;
   text-decoration: none;
   color: #fff;
 }
@@ -119,12 +120,12 @@
   height: 25px;
 
   position: absolute;
-  top: 24px;
-  right: 65px;
+  top: 45%;
+  left: 50%;
 }
 
 .close-menu {
-  background: var(--blue) url(../assets/close.png) no-repeat;
+  background: var(--dark-blue) url(../assets/close.png) no-repeat;
   width: 25px;
   height: 25px;
 

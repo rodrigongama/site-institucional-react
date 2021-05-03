@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 import LogoLancha from '../assets/logotipo-lancha-200.jpg';
 
 import '../styles/global.css';
@@ -13,17 +14,17 @@ export default function Header() {
           <div className="format">
             <h3>Boat Company</h3>
             <a href="/about">Quem somos</a>
-            <a href="/"><p>Onde estamos</p></a>
-            <a href="/"><p>O que fazemos</p></a>
-
-            <a href="/"><h3>Projetos</h3></a>
+            <a href="/">Onde estamos</a>
+            <a href="/">O que fazemos</a>
 
             <h3>Produtos</h3>
-            <a href="/"><p>Comunicação</p></a>
-            <a href="/"><p>Navegação</p></a>
-            <a href="/"><p>Segurança</p></a>
+            <a href="/">Comunicação</a>
+            <a href="/">Navegação</a>
+            <a href="/">Segurança</a>
 
-            <a href="/"><h3>Novidades</h3></a>
+            <a href="/news">
+              <h3>Novidades</h3>
+            </a>
 
             <a href="/contact">
               <h3>Contato</h3>
@@ -53,9 +54,9 @@ export default function Header() {
         <div className="nav3"></div>
       </button>
       
-      <a href="/">
+      <Link to="/">
         <img src={LogoLancha} alt="Logo da Boat Company" />
-      </a>
+      </Link>
       
 
       <div>

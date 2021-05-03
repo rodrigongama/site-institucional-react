@@ -9,13 +9,13 @@ import { useState } from 'react';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../styles/global.css';
-import '../styles/style.css';
+import '../styles/home.css';
 
 import ReactSwipe from 'react-swipe';
 import { Carousel } from 'react-responsive-carousel';
 
 
-function App() {
+export default function Home() {
   const [isNewsOpen, setIsNewsOpen] = useState(false);
   let reactSwipeEl;
 
@@ -100,7 +100,9 @@ function App() {
                     GPS-9000, um GPS mais potente e com o wireless "lorem ipsum"...
                   </p>
 
-                  <button className="button-more">Todas as novidades</button>
+                  <a href="/news" target="_blank">
+                    <button className="button-more">Todas as novidades</button>
+                  </a>
                 </div>
 
                 <div className="section-submit">
@@ -318,5 +320,3 @@ function App() {
     </>
   );
 }
-
-export default App;
