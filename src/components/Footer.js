@@ -5,10 +5,10 @@ export default function Footer() {
   return (
     <footer>
       <nav className="nav-footer">
-        <Link to="/">Boat S.A.</Link>
+        <Link to="/about">Boat S.A.</Link>
         <Link to="/">Projetos</Link>
         <Link to="/">Produtos</Link>
-        <Link to="/">Novidades</Link>
+        <Link to="/news">Novidades</Link>
         <Link to="/contact">Contato</Link>
       </nav>
 
