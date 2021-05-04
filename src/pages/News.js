@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import InputMask from 'react-input-mask'
 
 import '../styles/news.css';
 
@@ -20,7 +21,7 @@ export default function News() {
   const adressForm = async (event) => {
     const { value } = event.target;
 
-    if (value.length === 8) {
+    if (value.length === 9) {
       try {
         const { data } = await axios.get(
           `https://brasilapi.com.br/api/cep/v1/${value}`,
@@ -70,12 +71,12 @@ export default function News() {
           <input type="text" name="name" id="name"/>
 
           <label htmlFor="cep">CEP:</label>
-          <input
-            type="cep"
+          <InputMask
+            type="text"
             name="cep"
             id="cep"
             onKeyUp={adressForm}
-            maxLength={8}
+            mask="99999-999"
           />
 
           {messageError && (

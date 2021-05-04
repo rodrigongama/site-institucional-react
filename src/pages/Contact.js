@@ -1,4 +1,6 @@
 import React from 'react';
+import InputMask from 'react-input-mask';
+
 import '../styles/global.css';
 import '../styles/contact.css';
 
@@ -24,8 +26,8 @@ export default function Contact() {
               </div>
               
               <div>
-                  <label for="object">Assunto:</label>
-                  <select name="object" id="object">
+                  <label for="subject">Assunto:</label>
+                  <select name="subject" id="subject">
                       <option value="Pedido de cotação">Pedido de cotação</option>
                   </select>
               </div>
@@ -34,10 +36,10 @@ export default function Contact() {
                   <label for="telefone">Telefone:</label>
 
                   <div className="tel">
-                      <input type="text" name="telefone" id="tel1" maxlength="2" />
+                      <InputMask type="text" name="telefone" id="tel1" mask="(99)" />
 
                       <span>-</span>
-                      <input type="tel" name="telefone" id="tel2" maxlength="9" />
+                      <InputMask type="tel" name="telefone" id="tel2" mask="99999-9999" />
                   </div>
               </div>
               
